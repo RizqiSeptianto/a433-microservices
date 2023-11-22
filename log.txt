@@ -1,0 +1,49 @@
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.501+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=e5a9a67dd64b
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] db version v3.6.23
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] modules: none
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] build environment:
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten]     distarch: x86_64
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.557+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+a433-microservices-item-db-1  | 2023-11-22T10:23:39.682+0000 I STORAGE  [initandlisten] 
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | > docker-software-delivery@1.0.0 start /app
+a433-microservices-item-app-1  | > node ./bin/www
+a433-microservices-item-app-1  | 
+a433-microservices-item-app-1  | NODE_ENV: production
+a433-microservices-item-app-1  | Connected to database
+a433-microservices-item-db-1   | 2023-11-22T10:23:39.741+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+a433-microservices-item-db-1   | 2023-11-22T10:23:39.741+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+a433-microservices-item-db-1   | 2023-11-22T10:23:39.763+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+a433-microservices-item-db-1   | 2023-11-22T10:23:54.001+0000 I STORAGE  [initandlisten] WiredTiger message [1700648634:1029][1:0x7fce8a665a40], txn-recover: Set global recovery timestamp: 0
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.414+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.435+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.435+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.435+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.513+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.513+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.514+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+a433-microservices-item-db-1   | 2023-11-22T10:23:57.514+0000 I CONTROL  [initandlisten] 
+a433-microservices-item-db-1   | 2023-11-22T10:23:58.413+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 6ba5a4aa-785e-44eb-ac29-b98d58ede492
+a433-microservices-item-db-1   | 2023-11-22T10:23:58.980+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+a433-microservices-item-db-1   | 2023-11-22T10:23:59.127+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 5f844f65-cccf-4961-b993-8e1693a61939
+a433-microservices-item-db-1   | 2023-11-22T10:24:00.091+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+a433-microservices-item-db-1   | 2023-11-22T10:24:00.398+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+a433-microservices-item-db-1   | 2023-11-22T10:24:00.399+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+a433-microservices-item-db-1   | 2023-11-22T10:24:00.400+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+a433-microservices-item-db-1   | 2023-11-22T10:24:00.557+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 5aa818f8-ba65-47ad-b2e0-23683bddbb65
+a433-microservices-item-db-1   | 2023-11-22T10:24:02.373+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+a433-microservices-item-db-1   | 2023-11-22T10:24:02.373+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+a433-microservices-item-db-1   | 2023-11-22T10:24:02.556+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+a433-microservices-item-db-1   | 2023-11-22T10:24:02.587+0000 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 2003ms
+a433-microservices-item-db-1   | 2023-11-22T10:25:02.315+0000 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 255ms
+a433-microservices-item-db-1   | 2023-11-22T10:25:02.604+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after logicalSessionRecordCache: 0, after network: 0, after opLatencies: 0, after opReadConcernCounters: 0, after opcounters: 0, after opcountersRepl: 0, after oplogTruncation: 0, after repl: 0, after security: 0, after storageEngine: 0, after tcmalloc: 0, after transactions: 0, after transportSecurity: 0, after wiredTiger: 1215, at end: 1215 }
+a433-microservices-item-db-1   | 2023-11-22T10:25:24.855+0000 I NETWORK  [listener] connection accepted from 172.19.0.3:55978 #1 (1 connection now open)
+a433-microservices-item-db-1   | 2023-11-22T10:25:25.496+0000 I NETWORK  [conn1] received client metadata from 172.19.0.3:55978 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.10.16.3-microsoft-standard-WSL2" }, platform: "Node.js v14.21.2, LE, mongodb-core: 2.1.20" }
+a433-microservices-item-db-1   | 2023-11-22T10:27:58.861+0000 I COMMAND  [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 3669ms
+a433-microservices-item-db-1   | 2023-11-22T10:27:59.636+0000 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 111ms
+a433-microservices-item-db-1   | 2023-11-22T10:28:07.669+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 364, after backgroundFlushing: 364, after connections: 364, after dur: 364, after extra_info: 364, after globalLock: 364, after locks: 364, after logicalSessionRecordCache: 364, after network: 364, after opLatencies: 1128, after opReadConcernCounters: 1128, after opcounters: 1128, after opcountersRepl: 1128, after oplogTruncation: 1141, after repl: 1141, after security: 1141, after storageEngine: 1282, after tcmalloc: 2081, after transactions: 2081, after transportSecurity: 2081, after wiredTiger: 2541, at end: 5278 }
