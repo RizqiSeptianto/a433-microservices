@@ -1,0 +1,7 @@
+#link github package karsajobs-ui
+
+https://github.com/users/RizqiSeptianto/packages/container/package/karsajobs%2Fkarsajobs-ui
+
+#link docker hub
+
+https://hub.docker.com/repository/docker/hubrizqi/karsajobs-ui/general
