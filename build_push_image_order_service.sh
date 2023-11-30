@@ -14,7 +14,7 @@ docker push hubrizqi/order-service:latest
 docker build -t docker.pkg.github.com/rizqiseptianto/ecommerce/order-service:latest .
 
 #Perintah login ke github packages
-docker login docker.pkg.github.com -u rizqiseptianto -p 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
+docker login docker.pkg.github.com -u rizqiseptianto -p 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
 
 #Perintah untuk mengunggah docker image ke github packages
 docker push docker.pkg.github.com/rizqiseptianto/ecommerce/order-service:latest
