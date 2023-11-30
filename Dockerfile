@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 #Saat container dijalankan akan menjalankan script run pada aplikasi node.js dengan menggunakan npm
-CMD [ "npm", "run", "serve" ]
+CMD [ "node", "index.js" ]
