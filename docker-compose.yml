@@ -1,0 +1,38 @@
+#Mendefinisikan versi dari docker compose yaitu versi 3.7
+version: '3.7'
+services:
+  order-service:
+    #Menggunakan docker image dari docker hub
+    image: hubrizqi/order-service:latest
+    #Melakukan port mapping agar dapat diakses dari port 3000 di host
+    ports:
+      - 3000:3000
+    #Menentukan environment variable untuk service ini
+    environment:
+      - PORT=3000
+      - AMQP_URL=amqp://rabbitmq:5672
+    #Mendefinisikan bahwa order-service membutuhkan layanan rabbitmq terlebih dulu sebelum berjalan
+    depends_on:
+      - rabbitmq
+
+  shipping-service:
+    #Menggunakan docker image dari docker hub
+    image: hubrizqi/shipping-service:latest
+    #Melakukan port mapping agar dapat diakses dari port 3001 di host
+    ports:
+      - 3001:3001
+    #Menentukan environment variable untuk service ini
+    environment:
+      - PORT=3001
+      - AMQP_URL=amqp://rabbitmq:5672
+    #Mendefinisikan bahwa shipping-service membutuhkan layanan order-service terlebih dulu sebelum berjalan
+    depends_on:
+      - order-service
+      
+  rabbitmq:
+    # Menggunakan Docker image dari RabbitMQ versi 3.11 dengan fitur manajemen
+    image: rabbitmq:3.11-management
+    #Melakukan mapping port 5672 dan 15672 dari container ke port 5672 dan 15672 di host
+    ports:
+      - 5672:5672
+      - 15672:15672

@@ -1,0 +1,7 @@
+Link Docker hub image shipping service
+
+https://hub.docker.com/repository/docker/hubrizqi/shipping-service/general
+
+Link Github packages shipping service
+
+https://github.com/users/RizqiSeptianto/packages/container/package/ecommerce%2Fshipping-service
