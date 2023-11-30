@@ -1,0 +1,7 @@
+Link docker hub image order-service
+
+https://hub.docker.com/repository/docker/hubrizqi/order-service/general
+
+Link Github packages image order-service
+
+https://github.com/users/RizqiSeptianto/packages/container/package/ecommerce%2Forder-service
